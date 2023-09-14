@@ -1,0 +1,183 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dice {
+    background-color: white;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(3, 16px);
+    grid-template-rows: repeat(3, 16px);
+    gap: 10px;
+    padding: 16px;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+.dice aside {
+    background-color: black;
+    border-radius: 50%;
+    display: none;
+}
+
+/* .dots-1 {
+    grid-template-areas: 
+    ". . ."
+    ". one-dot ."
+    ". . .";
+}
+
+.dots-2 {
+    grid-template-areas: 
+    "one-dot . ."
+    ". . ."
+    ". . two-dot";
+}
+
+.dot-one {
+    grid-area: one-dot;
+} */
+
+/** One dot **/
+
+.dots-1 .dot-one {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+    display: block;
+}
+
+/** Two dots **/
+
+.dots-2 .dot-one {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    display: block;
+}
+
+.dots-2 .dot-two {
+    grid-column: 3 / span 1;
+    grid-row: 3 / span 1;
+    display: block;
+}
+
+/** Three dots **/
+
+.dots-3 .dot-one {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    display: block;
+}
+
+.dots-3 .dot-two {
+    grid-column: 3 / span 1;
+    grid-row: 3 / span 1;
+    display: block;
+}
+
+.dots-3 .dot-three {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+    display: block;
+}
+
+/** Four dots **/
+
+.dots-4 .dot-one {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    display: block;
+}
+
+.dots-4 .dot-two {
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
+    display: block;
+}
+
+.dots-4 .dot-three {
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+    display: block;
+}
+
+.dots-4 .dot-four {
+    grid-column: 3 / span 1;
+    grid-row: 3 / span 1;
+    display: block;
+}
+
+/** Five dots **/
+
+.dots-5 .dot-one {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    display: block;
+}
+
+.dots-5 .dot-two {
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
+    display: block;
+}
+
+.dots-5 .dot-three {
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+    display: block;
+}
+
+.dots-5 .dot-four {
+    grid-column: 3 / span 1;
+    grid-row: 3 / span 1;
+    display: block;
+}
+
+.dots-5 .dot-five {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+    display: block;
+}
+
+/** Six dots **/
+
+.dots-6 .dot-one {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    display: block;
+}
+
+.dots-6 .dot-two {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+    display: block;
+}
+
+.dots-6 .dot-three {
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+    display: block;
+}
+
+.dots-6 .dot-four {
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
+    display: block;
+}
+
+.dots-6 .dot-five {
+    grid-column: 3 / span 1;
+    grid-row: 2 / span 1;
+    display: block;
+}
+
+.dots-6 .dot-six {
+    grid-column: 3 / span 1;
+    grid-row: 3 / span 1;
+    display: block;
+}
